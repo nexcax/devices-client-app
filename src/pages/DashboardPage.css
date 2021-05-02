@@ -1,0 +1,14 @@
+.page-container {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
