@@ -23,6 +23,8 @@ All the dependencies were already added in the package.json file and you can fol
 
 ## How to run
 
+The configuration file is in the path `src/configs/Constants.js` just in case that you need to change the url to consume the API, modify this, .env file was not included in this project so the change must be done manually.
+
 This app was created based on the backend API provided by Ninja Team from: [https://github.com/NinjaRMM/devicesTask_serverApp](https://github.com/NinjaRMM/devicesTask_serverApp), all endpoints are describes below:
 
 ### GET devices
