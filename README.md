@@ -1,3 +1,4 @@
+*If you are running new npm version (npm 7+) for the installation using npm run `npm install --legacy-peer-deps` to get the proper versions for the packages used *
 
 # Devices Client App
 This project is for a challenge resolution to manage devices storing all information related below:
