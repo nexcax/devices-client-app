@@ -30,12 +30,10 @@ class DeviceList extends Component {
     const { devices } = this.props;
 
     return (
-      <>
-        <Page
-          devices={devices}
-          handleOnEditClick={this.handleOnEditClick}
-          handleOnDeleteClick={this.handleOnDeleteClick.bind(this)} />
-      </>
+      <Page
+        devices={devices}
+        handleOnEditClick={this.handleOnEditClick}
+        handleOnDeleteClick={this.handleOnDeleteClick.bind(this)} />
     )
   }
 }

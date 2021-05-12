@@ -25,17 +25,18 @@ const useStyles = makeStyles((theme) =>
 
 export default function Page({open, device, handleClose, handleSubmitForm}) {
   const classes = useStyles();
+  const initialState = {
+    id: '',
+    system_name: '',
+    type: '',
+    hdd_capacity: 0,
+  };
   const [errors, setErrors] = useState({
     system_name: false,
     type: false,
     hdd_capacity: false,
   });
-  const [state, setState] = useState({
-    id: '',
-    system_name: '',
-    type: '',
-    hdd_capacity: 0,
-  });
+  const [state, setState] = useState(initialState);
 
   useEffect(() => {
     if (device && device.id) {
@@ -45,6 +46,8 @@ export default function Page({open, device, handleClose, handleSubmitForm}) {
         type: device.type,
         hdd_capacity: device.hdd_capacity,
       });
+    } else {
+      setState(initialState);
     }
   }, [device]);
 
